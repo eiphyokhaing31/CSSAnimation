@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            
+        }
+        .container >button{
+            width: 60px;
+            padding: 10px;
+            background-color: deeppink;
+            border: none;
+            color: white;
+
+            transform: translate(200px);
+            animation-name: move;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move{
+            0%{
+                transform: translate(0px) rotate(0deg);
+            }
+            20%{
+                transform: translate(800px) rotate(360deg);
+            }
+            100%{
+                 transform: translate(0px) rotate(0deg);
+            }
+        }
+        h2{
+           color: darkslateblue;
+        }
+    </style>
+</head>
+<body>
+<h2>This is an animation</h2>
+    <div class="container">
+        <button>CSS</button>
+    </div>
+</body>
+</html>
